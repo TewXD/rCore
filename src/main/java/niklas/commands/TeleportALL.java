@@ -17,7 +17,7 @@ public class TeleportALL implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if(sender.hasPermission("core.tpall") || sender.isOp()){
+        if (sender.hasPermission("core.tpall") || sender.isOp()) {
         if (sender instanceof Player){
             Player player = (Player) sender;
             //Teleport all the online players to you

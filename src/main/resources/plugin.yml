@@ -1,6 +1,7 @@
 name: rCore
 version: ${project.version}
 main: niklas.main
+author: Niklas
 api-version: 1.13
 commands:
   tp:
@@ -11,3 +12,10 @@ commands:
     description: Get players ip addres
   broadcast:
     description: Send message to everyone
+  fly:
+    description: enables fly :)
+  heal:
+    description: Heal yourself and others
+  gm:
+    description: change your gamemode
+

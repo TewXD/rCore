@@ -19,4 +19,3 @@ public class JoinLeave implements Listener {
         e.setQuitMessage("§7[§4-§7] "+e.getPlayer().getName());
     }
 }
-
