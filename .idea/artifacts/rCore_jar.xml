@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="rCore:jar">
+    <output-path>$PROJECT_DIR$/../testServer/plugins</output-path>
+    <root id="archive" name="rCore.jar">
+      <element id="module-output" name="rCore" />
+    </root>
+  </artifact>
+</component>

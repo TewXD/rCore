@@ -1,0 +1,13 @@
+name: rCore
+version: ${project.version}
+main: niklas.main
+api-version: 1.13
+commands:
+  tp:
+    description: Teleport
+  tpall:
+    description: Teleport all players to you
+  getip:
+    description: Get players ip addres
+  broadcast:
+    description: Send message to everyone

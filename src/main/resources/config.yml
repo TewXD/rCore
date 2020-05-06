@@ -1,0 +1,4 @@
+no-players: '&cThere is no players online'
+no-perms: '&cYou do not have permissions to execute this command'
+null-players: '&cPlayer not found'
+teleport-done: '&aSuccessfully teleported'
