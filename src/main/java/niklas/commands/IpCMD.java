@@ -10,6 +10,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import sun.awt.Win32GraphicsConfig;
 
+import java.util.Objects;
+
 import static org.bukkit.Bukkit.*;
 
 public class IpCMD implements CommandExecutor {
@@ -24,12 +26,15 @@ public class IpCMD implements CommandExecutor {
                 if (args.length == 1) {
                     Player p = Bukkit.getPlayer(args[0]);
                     Player k = Bukkit.getPlayerExact(args[0]);
-                    if (p.isOnline()) {
+                    if(p == null){
+                        sender.sendMessage("§cPlayer not found");
+                    }
+                    else if (p.isOnline()) {
                         String ip = p.getPlayer().getAddress().getAddress().getHostAddress();
                         sender.sendMessage("IP Of " + p.getName() + " Is " + ip);
+                    }else{
+                        sender.sendMessage(ChatColor.GREEN + "Usage: /getip <player>");
                     }
-                } else {
-                    sender.sendMessage(ChatColor.GREEN + "Usage: /getip <player>");
                 }
             }
         } else {
