@@ -2,6 +2,7 @@ package niklas.commands;
 
 import niklas.main;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -30,6 +31,8 @@ public class HealCMD implements CommandExecutor {
                     Player.setFoodLevel(20);
                     sender.sendMessage("§aYou have healed yourself.");
                 }
+            }else{
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("no-perms")));
             }
 
         } else {

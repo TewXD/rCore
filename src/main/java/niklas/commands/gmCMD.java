@@ -19,7 +19,7 @@ public class gmCMD implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender s, Command cmd, String label, String[] args) {
         Player p = (Player)s;
-        if (s.hasPermission("gm.use"))
+        if (s.hasPermission("core.gamemode"))
             if (args.length == 0) {
                 s.sendMessage(ChatColor.RED + "Usage: /gamemode <arg>");
             } else if (args[0].equalsIgnoreCase("0") || args[0].equalsIgnoreCase("s")) {

@@ -17,7 +17,9 @@ public final class main extends JavaPlugin {
         getCommand("fly").setExecutor(new FlyCMD(this));
         getCommand("heal").setExecutor(new HealCMD(this));
         getCommand("gm").setExecutor(new gmCMD(this));
+        getCommand("clearchat").setExecutor(new ClearChat(this));
         getServer().getPluginManager().registerEvents(new JoinLeave(), this);
+
 
         getConfig().options().copyDefaults();
         saveDefaultConfig();

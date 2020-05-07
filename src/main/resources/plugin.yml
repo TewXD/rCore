@@ -18,4 +18,6 @@ commands:
     description: Heal yourself and others
   gm:
     description: change your gamemode
-
+  clearchat:
+    aliases: cc
+    description: Clears chat.
