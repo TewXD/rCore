@@ -22,7 +22,7 @@ public class ClearChat implements CommandExecutor {
                     Bukkit.broadcastMessage(" ");
                 }
                 Bukkit.broadcastMessage("§7§m------------------------------");
-                Bukkit.broadcastMessage("§aChat have been cleared by " +sender.getName());
+                Bukkit.broadcastMessage("§aChat have been cleared by " + sender.getName());
                 Bukkit.broadcastMessage("§7§m------------------------------");
             }else{
                 sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("no-perms")));
